@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, ShieldAlert, Cpu } from 'lucide-react';
+import { Award, Cpu } from 'lucide-react';
 
 const Certifications = () => {
   const certifications = [
@@ -9,7 +9,7 @@ const Certifications = () => {
       year: '2025',
       desc: 'Completed a Python internship focused on core programming concepts and hands-on application development.',
       icon: <Award size={24} className="text-cyan" />,
-      pdf: '/Skilldzire.pdf'
+      pdf: `${import.meta.env.BASE_URL}Skilldzire.pdf`
     },
     {
       title: 'Advanced Computer Architecture',
@@ -17,7 +17,7 @@ const Certifications = () => {
       year: '2026',
       desc: 'Successfully completed the NPTEL Elite Certification in Advanced Computer Architecture with an overall score of 80.',
       icon: <Cpu size={24} className="text-blue" />,
-      pdf: '/ACA_NPTEL_Certificate.pdf'
+      pdf: `${import.meta.env.BASE_URL}ACA_NPTEL_Certificate.pdf`
     }
   ];
 

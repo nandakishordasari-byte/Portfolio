@@ -73,7 +73,7 @@ const Navbar = ({ activeSection }) => {
         {/* Action Button */}
         <div className="navbar-actions-desktop">
           <a
-            href="/resume.pdf"
+            href={`${import.meta.env.BASE_URL}resume.pdf`}
             download="Dasari_Nanda_Kishor_Resume.pdf"
             className="btn btn-secondary btn-sm nav-resume-btn"
           >
@@ -106,7 +106,7 @@ const Navbar = ({ activeSection }) => {
             </a>
           ))}
           <a
-            href="/resume.pdf"
+            href={`${import.meta.env.BASE_URL}resume.pdf`}
             download="Dasari_Nanda_Kishor_Resume.pdf"
             className="btn btn-primary btn-sm drawer-resume-btn"
           >

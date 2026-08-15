@@ -1,5 +1,5 @@
 import React from 'react';
-import { FolderGit2, Check, BarChart2, PlayCircle, Users, Activity, CheckSquare, ShieldCheck, Terminal } from 'lucide-react';
+import { Check, Users, Activity, CheckSquare, Terminal } from 'lucide-react';
 import { Github } from './BrandIcons';
 
 const Projects = () => {
