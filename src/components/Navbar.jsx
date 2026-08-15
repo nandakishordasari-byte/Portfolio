@@ -47,15 +47,6 @@ const Navbar = ({ activeSection }) => {
     setIsMobileMenuOpen(false);
   };
 
-  const handleResumeDownload = () => {
-    // Reference the resume.pdf in the public folder
-    const link = document.createElement('a');
-    link.href = '/resume.pdf';
-    link.download = 'Dasari_Nanda_Kishor_Resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
 
   return (
     <nav className={`navbar ${isScrolled ? 'navbar-scrolled' : ''}`}>
@@ -81,10 +72,14 @@ const Navbar = ({ activeSection }) => {
 
         {/* Action Button */}
         <div className="navbar-actions-desktop">
-          <button onClick={handleResumeDownload} className="btn btn-secondary btn-sm nav-resume-btn">
+          <a
+            href="/resume.pdf"
+            download="Dasari_Nanda_Kishor_Resume.pdf"
+            className="btn btn-secondary btn-sm nav-resume-btn"
+          >
             <Download size={15} />
             <span>Download Resume</span>
-          </button>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -110,10 +105,14 @@ const Navbar = ({ activeSection }) => {
               {item.label}
             </a>
           ))}
-          <button onClick={handleResumeDownload} className="btn btn-primary btn-sm drawer-resume-btn">
+          <a
+            href="/resume.pdf"
+            download="Dasari_Nanda_Kishor_Resume.pdf"
+            className="btn btn-primary btn-sm drawer-resume-btn"
+          >
             <Download size={15} />
             <span>Download Resume</span>
-          </button>
+          </a>
         </div>
       </div>
     </nav>
