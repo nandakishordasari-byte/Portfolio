@@ -74,6 +74,8 @@ const Navbar = ({ activeSection }) => {
         <div className="navbar-actions-desktop">
           <a
             href={`${import.meta.env.BASE_URL}resume.pdf`}
+            target="_blank"
+            rel="noopener noreferrer"
             download="Dasari_Nanda_Kishor_Resume.pdf"
             className="btn btn-secondary btn-sm nav-resume-btn"
           >
@@ -107,6 +109,8 @@ const Navbar = ({ activeSection }) => {
           ))}
           <a
             href={`${import.meta.env.BASE_URL}resume.pdf`}
+            target="_blank"
+            rel="noopener noreferrer"
             download="Dasari_Nanda_Kishor_Resume.pdf"
             className="btn btn-primary btn-sm drawer-resume-btn"
           >
